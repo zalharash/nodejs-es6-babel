@@ -1,4 +1,4 @@
-# Nodejs with ES6 using `babel` plugins :
+# Nodejs with ES6 using babel plugins :
 
 A NodeJS boilerplate for using ES6 syntax (i.e import/export, arrow functions, destructoring) with node.
 
@@ -93,7 +93,7 @@ var fn = function fn() {
 
 ## babel configuration
 
-Without any configuration, this preset will include all plugins to support modern JavaScript (ES2015, ES2016, etc.). But presets can take options too. Rather than passing both cli and preset options from the terminal, there are many option to provide the configuration to babel plugin (i.e JSON file, JS file or package.json), personally I m using one of these two options:
+Without any configuration, this preset will include all plugins to support modern JavaScript (ES2015, ES2016, etc.). But presets can take options too. Rather than passing both cli and preset options from the terminal, there are many options to pass those options and plugin to babel (i.e JSON file, JS file or package.json), personally I m using one of these two options:
 
 - Using `.babelrc` file at the root of the project
 - Using package.json:
@@ -103,8 +103,8 @@ Without any configuration, this preset will include all plugins to support moder
   "name": "my-package",
   "version": "1.0.0",
   "babel": {
-    "presets": [ ... ],
-    "plugins": [ ... ],
+    "presets": [ ],
+    "plugins": [ ],
   }
 }
 ```
