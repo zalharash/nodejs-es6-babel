@@ -1,0 +1,30 @@
+{
+  "name": "nodejs-es6-babel",
+  "version": "1.0.0",
+  "author": "Ziad Alharash",
+  "description": "",
+  "main": "src/index.js",
+  "repository": "github:zalharash/nodejs-es6-babel.git",
+  "scripts": {
+    "start": "nodemon --exec babel-node src/index.js"
+  },
+  "babel": {
+    "presets": [
+      [
+        "@babel/preset-env",
+        {
+          "targets": {
+            "node": true
+          }
+        }
+      ]
+    ]
+  },
+  "keywords": [],
+  "devDependencies": {
+    "@babel/core": "^7.9.6",
+    "@babel/node": "^7.8.7",
+    "@babel/preset-env": "^7.9.6",
+    "nodemon": "^2.0.3"
+  }
+}
